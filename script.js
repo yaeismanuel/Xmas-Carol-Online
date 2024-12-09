@@ -3,12 +3,7 @@ const audio = new Audio("assets/Perfect_Christmas_Parody.mp3");
 
 window.onload = async () => {
   const response = await fetch(
-    "https://rest-api-codebuddy2.onrender.com/api/views",
-    {
-      params: {
-        url: window.hostname
-      }
-    }
+    `https://rest-api-codebuddy2.onrender.com/api/views?url=${window.hostname}`
   );
   const data = await response.json();
   if (data?.error) {
