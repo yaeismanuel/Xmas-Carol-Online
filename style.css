@@ -420,6 +420,10 @@ body {
 }
 
 /* customizable snowflake styling */
+.snowflakes {
+  width: 100%;
+  overflow: hidden;
+}
 .snowflake {
   color: #fff;
   font-size: 1em;
