@@ -1,5 +1,5 @@
-const audio = new Audio("assets/Perfect_Christmas_Parody.mp3");
-audio.preload = "auto";
+//const audio = new Audio("assets/Perfect_Christmas_Parody.mp3");
+//audio.preload = "auto";
 
 window.onload = async () => {
   const response = await fetch(
@@ -23,8 +23,8 @@ document
     "click",
     () => (document.querySelector(".greetings").style.display = "none")
   );
-document.body.addEventListener("click", () => audio.play());
-document.body.addEventListener("touchmove", () => audio.play());
-document.body.addEventListener("touchstart", () => audio.play());
-document.body.addEventListener("mousemove", () => audio.play());
-document.body.addEventListener("mouseover", () => audio.play());
+//document.body.addEventListener("click", () => audio.play());
+//document.body.addEventListener("touchmove", () => audio.play());
+//document.body.addEventListener("touchstart", () => audio.play());
+//document.body.addEventListener("mousemove", () => audio.play());
+//document.body.addEventListener("mouseover", () => audio.play());
