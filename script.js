@@ -1,4 +1,4 @@
-//const audio = new Audio("assets/Perfect_Christmas_Parody.mp3");
+const audio = new Audio("assets/Perfect_Christmas_Parody.mp3");
 //audio.preload = "auto";
 
 window.onload = async () => {
@@ -12,17 +12,15 @@ window.onload = async () => {
   );
   const data = await response.json();
   if (data?.error) {
-    return document.querySelector(".views").innerHTML = `Views: error`;
+    return (document.querySelector(".views").innerHTML = `Views: error`);
   }
   document.querySelector(".views").innerHTML = `Views: ${data.views}`;
 };
 
-document
-  .getElementById("okay")
-  .addEventListener(
-    "click",
-    () => (document.querySelector(".greetings").style.display = "none")
-  );
+document.getElementById("okay").addEventListener("click", () => {
+  audio.play();
+  document.querySelector(".greetings").style.display = "none";
+});
 //document.body.addEventListener("click", () => audio.play());
 //document.body.addEventListener("touchmove", () => audio.play());
 //document.body.addEventListener("touchstart", () => audio.play());
