@@ -422,11 +422,6 @@ body {
 }
 
 /* customizable snowflake styling */
-.snowflakes {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
 .snowflake {
   color: #fff;
   font-size: 1em;
@@ -550,4 +545,4 @@ body {
 .snowflake:nth-of-type(11) {
   left: 65%;
   animation-delay: 2.5s;
-}
+  }
