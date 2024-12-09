@@ -21,8 +21,8 @@ document.getElementById("okay").addEventListener("click", () => {
   audio.play();
   document.querySelector(".greetings").style.display = "none";
 });
-//document.body.addEventListener("click", () => audio.play());
-//document.body.addEventListener("touchmove", () => audio.play());
-//document.body.addEventListener("touchstart", () => audio.play());
-//document.body.addEventListener("mousemove", () => audio.play());
-//document.body.addEventListener("mouseover", () => audio.play());
+document.body.addEventListener("click", () => audio.play());
+document.body.addEventListener("touchmove", () => audio.play());
+document.body.addEventListener("touchstart", () => audio.play());
+document.body.addEventListener("mousemove", () => audio.play());
+document.body.addEventListener("mouseover", () => audio.play());
