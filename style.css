@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Festive&family=Great+Vibes&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Festive&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   padding: 0;
@@ -41,6 +41,43 @@ body {
   font-size: 1.8rem;
   text-align: center;
   font-family: "Festive", Sans-Serif;
+}
+.greetings{
+  width: 80%;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 11;
+  transform: translate(-50%,-50%);
+  font-family: 'Montserrat', Sans-Serif;
+  font-weight: 400;
+  background: #fff;
+}
+.greetings img{
+  width: 40%;
+}
+.greetings p:nth-child(2){
+  text-align: center;
+}
+.greetings button{
+  width: 100%;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 5px;
+  background: lightgreen;
+  box-shadow: 0 0 1px rgba(0,0,0,1);
+  font-family: 'Montserrat', Sans-Serif;
+  transition: 0.4s;
+}
+.greetings button:hover{
+  color: #fff;
+  background: green;
 }
 .qrcode {
   text-align: center;
@@ -121,6 +158,13 @@ body {
   bottom: 5px;
   right: 5px;
 }
+.views {
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  transform: translateX(-50%);
+  font-family: 'Bangers';
+}
 
 @keyframes up {
   0% {
@@ -155,6 +199,7 @@ body {
   height: 100%;
   position: absolute;
   overflow: hidden;
+  top: 0;
   left: 0;
 }
 
